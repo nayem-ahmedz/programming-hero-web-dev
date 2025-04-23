@@ -1,0 +1,16 @@
+Day 1
+Modules : 1, HTML
+
+
+html = hyper text markup language
+
+paragraph = <p> content goes here </p>
+
+b = bold, strong = stronger text, in bold
+
+List in HTML
+
+2 types of list, ul and ol, li means list item
+
+* div is a section = <div> content... </div>
+
