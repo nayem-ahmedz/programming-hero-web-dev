@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 v2 | More about HTML</title>
+    <link rel="stylesheet" href="styles/module-4.css">
+</head>
+<body>
+    <main>
+        <article>
+            <h2>Please fill the Form</h2>
+            <form>
+                <label for="name">Name:
+                    <input type="text" name="name" id="name">
+                </label>
+                <label for="address">Address:
+                    <input type="text" name="address" id="address">
+                </label>
+                <label for="phone">Phone:
+                    <input type="tel" name="phone" id="phone">
+                </label>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label for="male">
+                        <input type="radio" id="male" name="gender"> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender"> Female
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Check the aggreements</legend>
+                    <label for="ag1">
+                        <input type="checkbox" name="ag1" id="ag1"> I am ready to write
+                    </label>
+                    <label for="ag2">
+                        <input type="checkbox" name="ag2" id="ag2"> I am ready to read
+                    </label>
+                    <input type="checkbox" name="ag3" id="ag3">
+                    <label for="ag3" style="display: inline;">I am ready to Speak</label>
+                </fieldset>
+                <p>
+                    <input type="reset" value="reset">
+                    <input type="submit" value="submit">
+                </p>
+            </form>
+        </article>
+        <article>
+            <h2>HTML Table</h2>
+            <table>
+                <caption>Student Records</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th> <th>Age</th> <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nayem</td>
+                        <td>24</td>
+                        <td>active</td>
+                    </tr>
+                    <tr>
+                        <td>Hajifa</td>
+                        <td>24</td>
+                        <td>active</td>
+                    </tr>
+                    <tr>
+                        <td>Ahmed</td>
+                        <td>25</td>
+                        <td>inactive</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Person = 3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+    </main>
+</body>
+</html>

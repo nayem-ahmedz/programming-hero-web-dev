@@ -1,0 +1,60 @@
+header.main-header{
+    background-color: aliceblue; padding: 10px; margin-bottom: 30px;
+}
+
+/* nav menue */
+nav ul li{
+    display: inline-block;
+}
+ul a{
+    text-decoration: none; padding: 10px; display: block;
+}
+nav li:hover a{
+    background-color: gray; color: white;
+}
+.drop-btn{
+    position: relative;
+}
+nav ul li .dropdown{
+    display: none; position: absolute; right: 0; width: 100px;
+}
+.dropdown li{
+    display: block;
+}
+nav ul li:hover > .dropdown{
+    display: block;
+}
+
+
+
+
+
+figcaption{
+    text-align: center; margin-top: 10px;
+}
+
+video{
+    width: 350px; height: auto;
+}
+
+footer{
+    text-align: center; background-color: gray; padding: 10px;
+}
+
+
+
+label{
+    display: block; margin-bottom: 10px;
+}
+
+
+/* table */
+table{
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid gray; padding: 10px;
+}
+
+
+/* nested nav */
