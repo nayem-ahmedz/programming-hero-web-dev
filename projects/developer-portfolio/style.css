@@ -23,6 +23,10 @@ body {
     font-variation-settings: "wdth" 100;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .my-3 {
     margin: 10px auto;
 }
@@ -33,6 +37,10 @@ body {
 
 .mb-5 {
     margin-bottom: 2rem;
+}
+
+.mb-lg {
+    margin-bottom: 50px;
 }
 
 .my-custom {
@@ -51,7 +59,7 @@ header {
     background-color: #FFF8F3;
     background-image: url('images/developer.png'), url('images/header_bg.png');
     background-repeat: no-repeat;
-    background-position: left top, right bottom;
+    background-position: 15px 10px, right bottom;
 }
 
 header nav {
@@ -93,6 +101,7 @@ nav ul li a {
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
+    border: none;
 }
 
 .btn-outline {
@@ -135,7 +144,8 @@ section.banner {
 }
 
 .about-cont {
-    background-color: white; padding: 10px;
+    background-color: white;
+    padding: 10px;
 }
 
 .article-title {
@@ -147,9 +157,109 @@ section.banner {
     font-size: 1.1rem;
     color: var(--dark-3);
 }
-.about-items{
+
+.about-items {
     display: flex;
     justify-content: space-evenly;
+}
+
+/* section : skills */
+.skills-section {
+    text-align: center;
+}
+
+.skills-section>.article-texts {
+    max-width: 900px;
+    margin: auto auto 50px;
+}
+
+.skills-cards {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.skills-cards .card {
+    padding: 30px 35px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 6px 50px rgba(0, 0, 0, 0.1);
+}
+
+.skills-cards .card h3 {
+    color: var(--dark-1);
+    font-size: 20px;
+}
+
+.skills-cards .card p {
+    color: var(--dark-3);
+}
+
+/* section: Resume */
+.resume-boxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.resume-boxs h4 {
+    color: var(--dark-2);
+    margin: 0;
+}
+
+.resume-boxs h5,
+.resume-boxs p {
+    color: var(--dark-3);
+    margin-top: 8px;
+}
+
+.resume-boxs hr {
+    margin: 30px auto;
+}
+
+/* footer section */
+footer {
+    background-color: #FFF8F3;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 117px;
+}
+
+.footer-section>div {
+    width: 50%;
+}
+
+footer form input,
+footer form textarea {
+    display: block;
+    width: 400px;
+    padding: 18px 30px;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer form textarea {
+    height: 180px;
+    resize: none;
+}
+
+footer form input[type="submit"] {
+    display: inline-block;
+    width: auto;
+    padding: 18px 40px;
+}
+
+.logo-cont>img {
+    display: inline-block;
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 1440px) {
