@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 8 Task</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            max-width: 1440px; margin: auto;
+        }
+        .box-lg{
+            width: 100%; height: 90vh; border: 2px solid black; padding: 10px; border-radius: 10px; display: flex; gap: 1rem; margin-bottom: 3rem;
+        }
+        .box-lg > div{
+            display: flex; justify-content: center; align-items: center; font-size: 2rem;
+        }
+        .box-lg .left{
+            flex-basis: 30%; background-color: gray; border-radius: 10px;
+        }
+        .box-lg .right{
+            flex-basis: 70%; background-color: burlywood; border-radius: 10px;
+        }
+        @media screen and (max-width: 500px) {
+            .box-lg{
+                flex-direction: column;
+            }
+        }
+
+        /* responsive grid */
+        .responsive-grid{
+            width: 100%; height: 600px; font-size: 2rem; color: white;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+        }
+        .responsive-grid div{
+            border-radius: 10px;
+        }
+        .one{
+            background-color: tomato;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: 1 / span 2;
+        }
+        .two{
+            background-color: orange;
+            grid-column: 3 / span 2
+        }
+        .three{
+            background-color: purple;
+        }
+        .four{
+            background-color: gray;
+        }
+        @media screen and (max-width: 500px) {
+            .responsive-grid{
+                display: flex; flex-direction: column;
+            }
+            .responsive-grid div{
+                flex-basis: 25%;
+            }
+        }
+
+        /* Responsive image */
+        .res-image{
+            width: 100%;
+        }
+        .res-image img{
+            width: 100%;
+        }
+
+        /* responsive layout 2 */
+        .res-2 > div{
+            border: 1px solid gray; margin-bottom: 1rem;
+        }
+        .res-2-cont{
+            display: flex; gap: 0.5rem;
+        }
+        .res-2-cont div{
+            flex-basis: 70%;
+        }
+        .res-2-cont .left{
+            flex-basis: 30%;
+        }
+        .res-2-cont img{
+            width: 100%; height: 100%;
+        }
+        @media screen and (max-width: 500px) {
+            .res-2-cont{
+                flex-direction: column;
+            }
+        }
+
+        /* last task : responsive 2 */
+        .last-task article{
+            display: flex;
+        }
+        .article-2{
+            flex-direction: row-reverse;
+        }
+        .last-task article > div{
+            width: 50%;
+        }
+        article img{
+            width: 100%;
+        }
+        .art-text{
+            padding: 2rem;
+        }
+        @media screen and (max-width: 600px){
+            .last-task article{
+                flex-direction: column !important;
+            }
+            .last-task article > div{
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Responsive flex layout</h2>
+    <div class="box-lg">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+
+    <h2>Responsive grid layout</h2>
+    <div class="responsive-grid">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+    </div>
+
+    <h2>Responsive image</h2>
+    <div class="res-image">
+        <img src="https://images.unsplash.com/photo-1444487233259-dae9d907a740?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9hdHxlbnwwfHwwfHx8MA%3D%3D" alt="image">
+    </div>
+
+    <h2>Responsive layout 2</h2>
+    <section class="res-2">
+        <div class="res-2-cont">
+            <div class="left">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg">
+            </div>
+            <div>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam nulla animi cum suscipit saepe, possimus odio officia. Similique, dolores. Facilis, veniam. Illo reprehenderit voluptates maiores nobis hic recusandae incidunt accusamus molestias, harum natus, cupiditate voluptatem perferendis saepe qui, facere vitae dicta voluptatibus esse nam corporis dolor veniam at ducimus!</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="res-2-cont">
+            <div class="left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpArlJv1lSZ3K1xkFvu_JqPvQt7alfzBcYb-tFI2Yw8faVoRQO9y90gqACX5Dc6CoVMBc&usqp=CAU">
+            </div>
+            <div>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam nulla animi cum suscipit saepe, possimus odio officia. Similique, dolores. Facilis, veniam. Illo reprehenderit voluptates maiores nobis hic recusandae incidunt accusamus molestias, harum natus, cupiditate voluptatem perferendis saepe qui, facere vitae dicta voluptatibus esse nam corporis dolor veniam at ducimus!</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <h2>Responsive layout I aka last task</h2>
+    <section class="last-task">
+        <article>
+            <div>
+                <img src="https://images.unsplash.com/photo-1444487233259-dae9d907a740?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9hdHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+            <div class="art-text">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem porro, blanditiis accusantium quia odio ipsum provident totam suscipit sed tenetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum nobis non aspernatur perspiciatis mollitia facere distinctio ab, possimus nemo excepturi nulla nostrum unde iusto vitae esse quis illo aut dignissimos! Et quam facere molestiae? Repellendus autem molestias dicta libero! Quaerat modi, sunt ipsam impedit, eos debitis repudiandae maiores quae nostrum architecto reprehenderit totam labore esse fuga perspiciatis exercitationem inventore? Quidem culpa numquam veniam voluptates dolorem incidunt sit, reprehenderit, magnam eum dicta omnis eligendi deserunt qui</p>
+            </div>
+        </article>
+        <article class="article-2">
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg" alt="">
+            </div>
+            <div class="art-text">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem porro, blanditiis accusantium quia odio ipsum provident totam suscipit sed tenetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum nobis non aspernatur perspiciatis mollitia facere distinctio ab, possimus nemo excepturi nulla nostrum unde iusto vitae esse quis illo aut dignissimos! Et quam facere molestiae? Repellendus autem molestias dicta libero! Quaerat modi, sunt ipsam impedit, eos debitis repudiandae maiores quae nostrum architecto reprehenderit totam labore esse fuga perspiciatis exercitationem inventore? Quidem culpa numquam veniam voluptates dolorem incidunt sit, reprehenderit, magnam eum dicta omnis eligendi deserunt qui</p>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

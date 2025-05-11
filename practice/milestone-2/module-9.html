@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 9</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            max-width: 1440px; margin: auto;
+        }
+        .row{
+            height: 500px; display: flex; gap: 6px; margin-bottom: 6px;
+        }
+        .row > div{
+            width: 33%;
+        }
+        .row img{
+            width: 100%; height: 100%;
+        }
+        .vertical-college{
+            display: flex; flex-direction: column; gap: 6px;
+        }
+        .vertical-college img{
+            height: calc(50% - 3px);
+        }
+        .square-college{
+            display: grid; grid-template-columns: 1fr 1fr; gap: 6px;
+        }
+        @media screen and (max-width: 1024px){
+            .row{
+                flex-direction: column; height: auto;
+            }
+            .row > div{
+                width: auto;
+            }
+        }
+
+        /* complex grid */
+        .complex-grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            grid-template-rows: repeat(3, 200px) 50px 50px;
+        }
+        .complex-grid .box{
+            background-color: gray;
+        }
+        #box-1{
+            grid-row: span 5;
+        }
+        #box-11, #box-12{
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Complex Grid Layout</h2>
+    <section class="complex-grid">
+        <!-- div.box#box-${$}*12 -->
+         <div class="box" id="box-1">1</div>
+         <div class="box" id="box-2">2</div>
+         <div class="box" id="box-3">3</div>
+         <div class="box" id="box-4">4</div>
+         <div class="box" id="box-5">5</div>
+         <div class="box" id="box-6">6</div>
+         <div class="box" id="box-7">7</div>
+         <div class="box" id="box-8">8</div>
+         <div class="box" id="box-9">9</div>
+         <div class="box" id="box-10">10</div>
+         <div class="box" id="box-11">11</div>
+         <div class="box" id="box-12">12</div>
+    </section>
+
+    <h2>Image Gallery</h2>
+    <section>
+        <div class="row">
+            <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630">
+        </div>
+        <div class="row">
+            <div>
+                <img src="https://images.unsplash.com/photo-1444487233259-dae9d907a740?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9hdHxlbnwwfHwwfHx8MA%3D%3D">
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg">
+            </div>
+            <div class="vertical-college">
+                <img src="https://images.unsplash.com/photo-1444487233259-dae9d907a740?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9hdHxlbnwwfHwwfHx8MA%3D%3D  alt="">
+                <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="">
+            </div>
+            <div class="square-college">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1AKF7LelsXtbK8YAYYdiPrDMZdFd74ZTgkQ&s" alt=""><img src="https://media.istockphoto.com/id/2148595463/photo/african-elephant-in-wilderness-at-sunset.webp?b=1&s=612x612&w=0&k=20&c=NFbh18gN00DNB4LEtSnh6oSfJocFVFphXEzNZZQFfwg=" alt=""><img src="https://media.istockphoto.com/id/2148595463/photo/african-elephant-in-wilderness-at-sunset.webp?b=1&s=612x612&w=0&k=20&c=NFbh18gN00DNB4LEtSnh6oSfJocFVFphXEzNZZQFfwg=" alt=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1AKF7LelsXtbK8YAYYdiPrDMZdFd74ZTgkQ&s" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
