@@ -1,0 +1,83 @@
+CSS
+
+===> # CSS : var function
+can be define in root and used anywhere usign var(--name)
+
+Ex.
+:root{
+    --dark-1: #131313;
+}
+p{
+    color: var(--dark-1);
+}
+
+
+===> # CSS : Overflow
+overflow can be auto | scroll | hidden
+it supports overflow-x and overflow-y as well
+
+* Text overflow : can be ellipsion etc...
+p{
+    width: 400px; white-space: no-wrap; text-overflow: ellipsis;
+}
+
+
+===> # CSS : Transform
+can be one or multiple value : scale, rotate, skey, translate
+
+-scale
+scale the size of element, scale(1.0) | scaleX(0.5) | scaleY(0.4)
+
+-rotate
+rotate the element, rotate(0deg) | rotateX | rotateY
+
+-translate
+move the element in x or y-axis or both
+
+Ex. 
+p{
+    transform: scale(1.5) rotate(45deg) translate(10px, 20px)
+}
+
+* You can also select transform-origin : right top, to change the transform location/position
+
+
+
+===> # : Transition
+
+can take up to 4 values : name | duration | easing function | delay
+Ex.
+p{
+    width: 200px; transition: width 3s ease-in 2s;
+}
+.p:hover{
+    width: 600px;
+}
+
+Ex. 2 : multiple values in single property is allowed
+p{
+    width: 200px; transition: width 3s ease-in 2s, transform 2s linear 2s;
+}
+.p:hover{
+    width: 600px; transform: scale(1.25) translate(300px, 200px);
+}
+
+
+
+===> # CSS : Animation
+use to add animation in css
+p{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes name{
+    from{}
+    to{}
+}
+@keyframes name2{
+    0%{}
+    50%{}
+    100%{}
+}
+
+
