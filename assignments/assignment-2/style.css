@@ -1,0 +1,84 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+  font-family: 'Miama';
+  src: url('fonts/Miama.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.typography-font {
+  font-family: 'Miama', cursive;
+}
+
+
+/* shared styles */
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: rgba(230, 83, 60, 1);
+}
+body{
+    margin: 0; background-color: rgba(0, 0, 0, 1);
+}
+.container-lg{
+    max-width: 1120px; padding-left: 30px; padding-right: 30px; margin: auto;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+a.active{
+    background-color: var(--primary-color);
+}
+.body-text{
+    color: rgba(255, 255, 255, 0.5); line-height: 1.5rem;
+}
+.btn-primary{
+    padding: 16px 40px; border-radius: 42px; font-size: 1.125rem; color: white; background-color: var(--primary-color); font-weight: 600; margin-right: 14px; border: none;
+}
+.btn-outline{
+    background-color: black; border: 1px solid white;
+}
+
+/* header */
+header{
+    min-height: 715px; background-image: linear-gradient(rgba(17, 17, 17, 1), rgba(119, 119, 119, 0)); padding-top: 57px;
+}
+nav h2{
+    color: var(--primary-color); font-size: 2.25rem; font-style: italic;
+}
+nav ul{
+    list-style-type: none; margin: 0; padding: 4px; gap: 1rem; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 39px;
+}
+nav ul li a{
+    display: inline-block; padding: 8px 20px; border-radius: 46px; text-decoration: none; color: white; font-size: 1.125rem;
+}
+
+
+/* banner section */
+.banner{
+    color: white;
+}
+.banner .content{
+    max-width: 600px;
+}
+.banner-title{
+    font-size: 4.875rem; margin: 0;
+}
+.typography{
+    font-size: 10rem; font-weight: 500; line-height: 110px;
+}
+.banner-subtitle{
+    margin: 26px auto 28px;
+}
