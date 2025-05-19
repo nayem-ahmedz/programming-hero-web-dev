@@ -24,13 +24,16 @@
     --primary-color: rgba(230, 83, 60, 1);
 }
 body{
-    margin: 0; background-color: rgba(0, 0, 0, 1);
+    margin: 0; background-color: rgb(0, 0, 0);
 }
 .container-lg{
     max-width: 1120px; padding-left: 30px; padding-right: 30px; margin: auto;
 }
 .d-flex{
     display: flex;
+}
+.justify-center{
+    justify-content: center;
 }
 .justify-between{
     justify-content: space-between;
@@ -50,10 +53,23 @@ a.active{
 .btn-outline{
     background-color: black; border: 1px solid white;
 }
+.article-title{
+    font-size: 3rem; color: white; margin: 1.25rem auto;
+}
+.article-subtitle{
+    font-size: 0.875rem; color: rgba(255, 255, 255, 0.5); max-width: 631px; margin: auto;
+}
+.d-none{
+    display: none;
+}
+.mb-large{
+    margin-bottom: 100px;
+}
 
 /* header */
 header{
-    min-height: 715px; background-image: linear-gradient(rgba(17, 17, 17, 1), rgba(119, 119, 119, 0)); padding-top: 57px;
+    min-height: 715px;  padding-top: 57px;
+    background: linear-gradient(180deg, rgb(20, 20, 20),rgba(119, 119, 119, 0.28), rgb(5, 5, 5));
 }
 nav h2{
     color: var(--primary-color); font-size: 2.25rem; font-style: italic;
@@ -74,11 +90,98 @@ nav ul li a{
     max-width: 600px;
 }
 .banner-title{
-    font-size: 4.875rem; margin: 0;
+    font-size: 4.875rem; margin: 0; font-weight: 900;
 }
 .typography{
     font-size: 10rem; font-weight: 500; line-height: 110px;
 }
 .banner-subtitle{
     margin: 26px auto 28px;
+}
+
+/* banner image and badge */
+.banner .image{
+    position: relative;
+}
+.badge{
+    padding: 17px 23px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; background-color: rgba(255, 255, 255, 0.1); backdrop-filter: blur(15px); position: absolute; z-index: 1;
+}
+.badge h3,
+.badge h4,
+.badge p{
+    margin: 3px auto; letter-spacing: 1px;
+}
+.badge p{
+    font-size: 0.8125rem; color: rgba(255, 255, 255, 0.65);
+}
+.badge-1{
+    top: 120px; right: -80px;
+}
+.badge-1 h3{
+    font-size: 2.5rem; font-weight: 900;
+}
+.badge-2{
+    top: 421px; left: -113px;
+}
+.badge-2 .circle{
+    width: 40px; height: 40px; border-radius: 50%; background-color: var(--primary-color); margin-right: 12px;
+}
+.badge-2 h4{
+    font-size: 1.5rem; margin: 5px auto 8px;
+}
+.badge-2 p{
+    font-size: 1rem;
+}
+
+/* section : habits */
+article.habits{
+    text-align: center; color: white;
+}
+.habit-cards{
+    margin-top: 60px; gap: 40px; 
+}
+.habit-cards .card{
+    max-width: 231px;
+}
+.habit-cards img{
+    border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.habit-cards .card h3{
+    font-size: 1.125rem; font-weight: 600;
+}
+.habit-cards .card p{
+    font-size: 0.875rem; color: rgba(255, 255, 255, 0.5); line-height: 18px;
+}
+
+/* section : Daily Task */
+.daily-task{
+    margin-top: 100px; background-color: rgba(34, 34, 34, 1); padding: 30px 32px 30px 54px; border-radius: 18px;
+}
+.task-image{
+    min-width: 366px; height: 315px; background-color: gray; border-radius: 18px; background-image: url('images/run.jpg'); background-repeat: no-repeat; background-size: 330%; background-position: -577px -147px;
+}
+.task-content{
+    max-width: 440px; text-align: left;
+}
+.task-content h2{
+    margin: 0; font-weight: 900; line-height: 120%;
+}
+.task-content p{
+    margin: 16px auto 34px; line-height: 24px;
+}
+.task-content button{
+    padding: 16px 72px;
+}
+
+
+@media screen and (max-width: 992px){
+    nav{
+        margin-bottom: 75px !important;
+    }
+    .banner{
+        flex-direction: column; gap: 100px;
+    }
+    .habit-cards{
+        flex-wrap: wrap;
+    }
 }
