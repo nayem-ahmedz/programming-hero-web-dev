@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 13 | Tailwind Introduction</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans">
+    <header>
+        <h1 class="text-3xl text-center m-7">Introduction to tailwind CSS</h1>
+    </header>
+    <main>
+        <h2 class="text-2xl bg-green-500 text-black-500 sm:bg-red-500 sm:text-white">tailwind grid</h2>
+        <div class="border mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-5 md:gap-10">
+            <div class="border-1"> <p>body</p> </div>
+            <div class="border-1"> <p>body</p> </div>
+            <div class="border-1"> <p>body</p> </div>
+            <div class="border-1"> <p>body</p> </div>
+            <div class="border-1 md:col-span-2"> <p>body</p> </div>
+            <div class="border-1"> <p>body</p> </div>
+            <div class="border-1"> <p>body</p> </div>
+            <div class="border-1"> <p>body</p> </div>
+            <div class="border-1 md:row-span-2"> <p>body</p> </div>
+            <div class="border-1"> <p>body</p> </div>
+            <div class="border-1"> <p>body</p> </div>
+            <div class="border-1"> <p>body</p> </div>
+            <div class="border-1"> <p>body</p> </div>
+            <div class="border-1"> <p>body</p> </div>
+        </div>
+
+
+        <h2 class="text-2xl">tailwind flex</h2>
+        <div class="border md:flex h-200 justify-between items-center">
+            <div class="w-50 h-50 border-1">1</div>
+            <div class="w-50 h-50 border-1">2</div>
+            <div class="w-50 h-50 border-1">3</div>
+            <div class="w-50 h-50 border-1">4</div>
+        </div>
+
+
+
+        <!-- <h2 class="text-end font-mono me-8">this is a heading 2</h2>
+        <h3 class="text-amber-500 bg-black">this is a heading 3</h3>
+        <p class="text-blue-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat dignissimos assumenda corporis voluptates delectus maiores rem neque dolorem earum odio ea aliquam nemo quas quis beatae veritatis vel et enim, esse molestias alias totam. Saepe libero quas voluptatum eveniet earum, repellendus voluptates. Impedit vero recusandae laborum ex, architecto repudiandae.</p>
+        <hr>
+        <article class="w-1/2 mt-20 mb-10 mx-auto border border-blue-500 p-5 rounded hover:bg-gray-500 hover:text-white">
+            <h2 class="text-2xl text-center mb-4 font-mono underline hover:no-underline">Anna Frank Story</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, architecto, numquam voluptatem et rerum fugit veniam iusto ullam fugiat reprehenderit tenetur qui ipsa fuga unde laborum illo! Perferendis quos totam quis, excepturi dicta iusto accusamus blanditiis ullam dolor ad iure atque labore rerum aperiam molestiae eaque ut? Animi, nostrum. Quo.</p>
+        </article> -->
+
+        <h2 class="text-end me-4">Hey, my name is <span class="text-blue-600 underline">Nayem Ahmed</span> </h2>
+
+        <div class="w-1/2 bg-green-600 h-130 my-20 mx-auto rounded flex justify-center items-center border-2">
+            <div class="w-60 h-60 bg-red-600 border-2 rounded-full"></div>
+        </div>
+    </main>
+</body>
+</html>
