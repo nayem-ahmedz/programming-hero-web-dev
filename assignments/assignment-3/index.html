@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/e54598ab59.js" crossorigin="anonymous"></script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+</head>
+<body class="font-manrope bg-[#F4F4F4]">
+    <header class="pt-12 pb-24 bg-gradient-to-t from-[rgba(255,255,255,1)] to-[rgba(255,255,255,0)]">
+        <div class="navbar max-w-7xl mx-auto justify-between">
+            <div class="navbar-start w-auto grow lg:grow-0">
+                <a class="btn btn-ghost text-xl">
+                    <i class="fa-solid fa-arrow-right bg-[#ABEF5F] p-2 rounded-full -rotate-45 mr-2"></i>
+                    <span class="text-3xl font-extrabold">Rinterio</span>
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#" class="font-bold text-base">Home</a></li>
+                    <li><a href="#" class="text-base">Services</a></li>
+                    <li><a href="#" class="text-base">Portfolio</a></li>
+                    <li><a href="#" class="text-base">Blogs</a></li>
+                    <li><a href="#" class="text-base">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end w-auto gap-4">
+                <button class="btn btn-circle hidden md:inline-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <div class="dropdown dropdown-end hidden md:inline-block">
+                    <div tabindex="0" role="button" class="btn btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+                        <div class="card-body">
+                            <span class="text-lg font-bold">0 Items</span>
+                            <span class="text-info">Subtotal: $0</span>
+                            <div class="card-actions">
+                                <button class="btn btn-primary btn-block">View cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a
+                    class="text-xl font-extrabold bg-[#ABEF5F] rounded-4xl px-5 py-3 hidden md:inline-block hover:cursor-pointer">
+                    Book Consult <i
+                        class="fa-solid fa-arrow-right text-white bg-black p-2 rounded-full -rotate-45 ml-2 text-base"></i>
+                </a>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow right-0">
+                        <li><a href="#" class="font-bold text-base">Home</a></li>
+                        <li><a href="#" class="text-base">Services</a></li>
+                        <li><a href="#" class="text-base">Portfolio</a></li>
+                        <li><a href="#" class="text-base">Blogs</a></li>
+                        <li><a href="#" class="text-base">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hero mt-10 max-w-7xl mx-auto">
+            <div class="hero-content text-neutral-content text-center">
+                <div class="text-black space-y-4">
+                    <figure>
+                        <img src="assets/banner.png" alt="banner" class="max-w-[260px] md:max-w-md lg:max-w-xl mx-auto" />
+                    </figure>
+                    <h1
+                        class="mb-5 text-2xl/7 md:text-4xl/10 lg:text-6xl/20 font-extrabold max-w-6/7 md:max-w-xl lg:max-w-5xl mx-auto">
+                        A barn house of this design has a striking appearance</h1>
+                    <p class="mb-9 text-sm md:text-base max-w-full md:max-w-xl lg:max-w-4xl mx-auto">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered
+                        wood, sleek metal accents, and large windows that flood the space with natural light.
+                    </p>
+                    <a class="text-xl font-bold bg-[rgba(171,239,95,0.5)] rounded-4xl px-5 py-3 block sm:inline-block">
+                        View Details <i
+                            class="fa-solid fa-arrow-right text-white bg-[#ABEF5F] p-2 rounded-full -rotate-45 ml-2 text-base"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+    </main>
+</body>
+</html>
