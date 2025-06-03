@@ -1,0 +1,18 @@
+tailwind CSS
+
+background
+bg-white bg-black bg-red-50 to bg-red-950 and bg-[#custom]
+bg-[url('file.png')]
+bg-gradient-to-l from-red-500 to-blue-500
+
+border radius
+rounded rounded-xs|sm|md|lg|xl and rounded-10
+
+width
+w-1/2 w-xs w-6 w-2xl
+max-w-1/2 max-w-full max-w-lg
+
+height
+h-16 h-auto h-1/2
+max-h-full max-h-auto
+
