@@ -23,4 +23,4 @@ console.log(a); // false
 const b = isNaN(2 - 11);
 console.log(b); // false
 const c = isNaN('2a2');
-console.log(c);
+console.log(c); // true
