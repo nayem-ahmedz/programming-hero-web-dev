@@ -1,0 +1,6 @@
+// String
+when comparing String remember to:
+  1. transform into lower/uppercase
+  2. trim() the text
+
+
