@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubble</title>
+</head>
+<body>
+    <section>
+        <ul>
+            <li>Lorem, ipsum.</li>
+            <li id="item-2">Vitae, soluta.</li>
+            <li>Soluta, ad?</li>
+            <li>Expedita, magni?</li>
+            <li>Tenetur, maiores?</li>
+        </ul>
+    </section>
+    <script>
+        const section = document.querySelector('section');
+        const ul = document.querySelector('ul');
+        const item2 = document.getElementById('item-2');
+        item2.addEventListener('click', function(event){
+            console.log('item 2 clicked');
+            // event.stopPropagation(); // it will cause all other backwards level event to stop, but keeps same level enable
+            event.stopImmediatePropagation(); // it will cause all other backwards level and same level events to stop
+        });
+        item2.addEventListener('click', function(){
+            console.log('(another), item 2 clicked');
+        });
+        ul.addEventListener('click', function(){
+            console.log('ul got clicked');
+        });
+        section.addEventListener('click', function(){
+            console.log('section got clicked');
+        });
+    </script>
+</body>
+</html>
