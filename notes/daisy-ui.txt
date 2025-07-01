@@ -1,5 +1,0 @@
-daisy ui has dark theme by default
-
-you can reset it by setting
-    data-theme="light" in <html>
-

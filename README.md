@@ -1,4 +1,5 @@
-Started learning from Programming Hero Course from 23 April 2025
+# Complete Web Development
 
-# Track / Records
-Day 1, April 23 = From Starting to Module 1
+Starting my new journey with Programming Hero
+* Batch 12
+* from 1 July 2025
