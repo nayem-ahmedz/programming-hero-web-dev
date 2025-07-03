@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        h3{
+            color: red;
+        }
+        #myId{
+            color: green;
+        }
+        .myClass{
+            color: blue;
+        }
+        h3, .grouped-selector{
+            font-size: 2rem;
+        }
+        .gray-bg{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>We can use tag, id, class, attribute to selec a html element</h1>
+    <h3>Tag selector</h3>
+    <p id="myId">id selector</p>
+    <p class="myClass">class selector 1</p>
+    <p class="myClass">class selector 2</p>
+    <p>not in same class</p>
+    <p class="myClass gray-bg">class selector 3</p>
+</body>
+</html>
