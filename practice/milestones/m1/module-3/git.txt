@@ -1,0 +1,5 @@
+git init = initialize empyty git
+git add filename = 
+git add . = add all file from cd
+git commit -m "message" = commit a version
+git push = push to remote branch
