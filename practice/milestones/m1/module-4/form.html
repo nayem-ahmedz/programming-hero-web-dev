@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form in html</title>
+    <style>
+        .basic-info label{
+            display: block; margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form>
+        <fieldset class="basic-info">
+            <legend>Basic Info</legend>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+        </fieldset>
+        <fieldset>
+            <legend>Other info</legend>
+            <label for="dept">Department</label>
+            <select id="dept">
+                <option value="eee">EEE</option>
+                <option value="cse">CSE</option>
+                <option value="se">SE</option>
+            </select> <br><br>
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I accept to terms</label>
+            <br><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="clear">
+        </fieldset>
+    </form>
+</body>
+</html>
