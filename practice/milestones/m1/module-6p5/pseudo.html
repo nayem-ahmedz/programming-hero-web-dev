@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+        h1:hover{
+            color: red;
+        }
+        input:focus{
+            background-color: red; color: white;
+        }
+        li:first-child{
+            text-decoration: 1px solid line-through;
+        }
+        li:last-child{
+            text-decoration: 1px solid underline;
+        }
+        li:nth-child(3){
+            color: red;
+        }
+        li:nth-child(even){ /* even/odd */
+            padding-left: 10px;
+        }
+        li:nth-child(2n+1){ /* 2n, 2n+1 etc */
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <input type="text">
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+    </ul>
+</body>
+</html>

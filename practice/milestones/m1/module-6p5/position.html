@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        .parent{
+            width: 700px; height: 700px; border: 1px solid red;
+            position: relative;
+        }
+        .child{
+            width: 100px; height: 100px; border: 2px dotted green;
+            /* position: relative; top: 50px; left: 50px; */
+            /* position: absolute; top: 0; right: 0; */
+            /* position: sticky; top: 0; */
+            position: fixed; top: 0; right: 0;
+        }
+        .dummy{
+            height: 500px; width: 100%; background-color: gray; margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS : position</h1>
+    <ol>
+        <li>static</li>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>sticky</li>
+        <li>fixed</li>
+    </ol>
+    <div class="parent">
+        <div class="child">child</div>
+    </div>
+    <div class="dummy">dummy-1</div>
+    <div class="dummy">dummy-2</div>
+    <div class="dummy">dummy-3</div>
+    <div class="dummy">dummy-4</div>
+    <div class="dummy">dummy-5</div>
+</body>
+</html>

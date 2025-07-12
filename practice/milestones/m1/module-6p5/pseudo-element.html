@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element</title>
+    <style>
+        h2::after{
+            content: '.pdf';
+            color: red;
+            background-color: yellow;
+        }
+        h2::before{
+            content: '-> ';
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>this is heading 1</h2>
+    <h2>this is heading 2</h2>
+    <h2>this is heading 3</h2>
+    <h2>this is heading 4</h2>
+    <h2>this is heading 5</h2>
+</body>
+</html>
