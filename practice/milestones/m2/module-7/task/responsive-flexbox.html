@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 | Resposive Flex Box</title>
+    <style>
+        section{
+            height: 80vh; max-width: 1200px; border: 1px solid green; margin: auto;
+            display: flex; gap: 1rem; padding: 1rem; border-radius: 1.5rem;
+        }
+        section div{
+            border-radius: 1rem; transition: all 0.3s;
+        }
+        .left{
+            width: 30%; background-color: gray;
+        }
+        .right{
+            width: 70%; background-color: antiquewhite;
+        }
+        @media screen and (max-width: 570px){
+            section{
+                flex-direction: column; justify-content: stretch;
+            }
+            section div{
+                width: 100% !important;
+            }
+            .left{
+                height: 30%;
+            }
+            .right{
+                height: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </section>
+</body>
+</html>
