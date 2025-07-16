@@ -1,0 +1,63 @@
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+}
+section{
+    grid-area: adv;
+}
+footer{
+    grid-area: footer;
+}
+header, nav, aside, main, section, footer{
+    background-color: wheat;
+    padding: 60px 30px; transition: all 0.5s;
+}
+
+body{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    "header header header header header"
+    "nav main main main aside"
+    "nav main main main adv"
+    "footer footer footer footer footer"
+    ;
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        padding: 20px 30px;
+    }
+    nav ul li{
+        display: inline-block;
+    }
+    body {
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "aside main main main"
+            "aside main main main"
+            "adv footer footer footer"
+        ;
+    }
+}
+@media screen and (max-width: 425px){
+    body{
+        grid-template-areas:
+            "header"
+            "nav"
+            "adv"
+            "main"
+            "aside"
+            "footer"
+        ;
+    }
+}
