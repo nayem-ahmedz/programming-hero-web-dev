@@ -1,0 +1,1 @@
+const link = 'https://github.com/ProgrammingHero1/js-problems-part1-practice-tasks';
