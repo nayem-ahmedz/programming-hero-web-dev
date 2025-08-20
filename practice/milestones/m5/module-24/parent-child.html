@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent and child nodes</title>
+</head>
+<body>
+    <h2>Favourite fruits list</h2>
+    <ul class="favourite-fruits">
+        <li>apple</li>
+        <li>mango</li>
+        <li>orange</li>
+    </ul>
+    <script>
+        const list = document.querySelector('.favourite-fruits');
+        // console.log(list)
+        const child = list.children;
+        console.log(child);
+        for(const item of child){
+            // console.log(item.innerText.toUpperCase())
+            item.innerText = item.innerText[0].toUpperCase() + item.innerText.slice(1);
+        }
+    </script>
+</body>
+</html>

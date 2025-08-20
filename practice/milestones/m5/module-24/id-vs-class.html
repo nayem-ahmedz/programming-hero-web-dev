@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id vs class</title>
+</head>
+<body>
+    <h1 id="heading">this is a heading</h1>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li class="favourite">Mango</li>
+        <li class="favourite">Orange</li>
+        <li class="favourite">Strawberry</li>
+    </ul>
+    <script>
+        const heading = document.getElementById('heading');
+        // console.log(heading);
+        // console.log(heading.innerText);
+        heading.innerText = 'changed using js';
+
+        const list = document.getElementsByClassName('favourite');
+        console.log(list, typeof list); // type: object
+        for(const el of list){
+            // console.log(el);
+            console.log(el.innerText);
+        }
+    </script>
+</body>
+</html>

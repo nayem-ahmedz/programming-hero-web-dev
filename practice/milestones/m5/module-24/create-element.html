@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create element using js</title>
+</head>
+<body>
+    <section id="main-section">
+        <h1>Below is the list of fruits created using JS</h1>
+    </section>
+
+    <script>
+        const section = document.getElementById('main-section');
+        // console.log(section.getAttribute('id'))
+        const fruits = ['apple', 'banana', 'mango', 'orange', 'strawberry', 'cherry'];
+        const ul = document.createElement('ul');
+        section.appendChild(ul);
+        for(const fruit of fruits){
+            const li = document.createElement('li');
+            li.innerText = fruit[0].toUpperCase() + fruit.slice(1);
+            ul.appendChild(li);
+        }
+    </script>
+</body>
+</html>

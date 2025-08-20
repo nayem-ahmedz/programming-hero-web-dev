@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Style</title>
+    <style>
+        .bg-red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">This is <span>a</span> heading</h1>
+    <p id="para-1">This is a paragraph</p>
+
+    <script>
+        const heading = document.getElementById('heading');
+        // console.log(heading); // <h1 id="heading">This is <span>a</span> heading</h1>
+        // console.log(heading.innerText); // This is a heading
+        // console.log(heading.innerHTML); // This is <span>a</span> heading
+        // heading.style.color = 'white';
+        // heading.style.backgroundColor = 'gray'
+
+        console.log(heading.getAttribute('id')); // heading
+        console.log(heading.setAttribute('title', 'title by js'));
+
+        heading.classList.add('bg-red');
+        console.log(heading.classList);
+    </script>
+    <script>
+        const para = document.querySelector('#para-1');
+        console.log(para.getAttribute('id'));
+        para.setAttribute('title', 'this is set by js');
+        para.classList.add('bg-red');
+        
+    </script>
+</body>
+</html>
