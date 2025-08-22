@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event and inner text update</title>
+</head>
+<body>
+    <p id="output">Empty</p>
+    <input type="text" id="name" placeholder="write anything">
+    <button type="button" id="btn-1">Update</button>
+
+    <script>
+        document.getElementById('btn-1').addEventListener('click', function(){
+            // console.log('clicked');
+            const inputField = document.getElementById('name');
+            // console.log(inputField);
+            const value = inputField.value.trim();
+            // console.log(value);
+            if(value){
+                const output = document.querySelector('#output');
+                output.innerText = value;
+                inputField.value = '';
+            } else{
+                console.log('empty');
+            }
+        });
+    </script>
+</body>
+</html>

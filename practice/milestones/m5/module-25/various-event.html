@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>various events</title>
+</head>
+<body>
+    <input type="text" id="input-field">
+
+    <script>
+        const input = document.querySelector('#input-field');
+        // input focus
+        input.addEventListener('focus', function(){
+            console.log('input field on focus');
+        });
+
+        // input blur -> de selected
+        input.addEventListener('blur', function(){
+            console.log('input field on focus out');
+        });
+
+        // key down, press, and up
+        input.addEventListener('keydown', function(){
+            console.log('key down');
+        })
+        input.addEventListener('keypress', function(){
+            console.log('key pressed');
+        })
+        input.addEventListener('keyup', function(){
+            console.log('key pressed and up');
+        })
+
+        // if you wanna get which key is pressed -> use key up
+        input.addEventListener('keyup', function(event){
+            // console.log(event);
+            // console.log(event.target)
+            console.log(event.target.value)
+        })
+    </script>
+</body>
+</html>

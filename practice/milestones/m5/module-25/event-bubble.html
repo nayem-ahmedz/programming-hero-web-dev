@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <ul>
+            <li class="item">item-1</li>
+            <li class="item">item-2</li>
+            <li class="item">item-3</li>
+            <li class="item">item-4</li>
+            <li class="item">item-5</li>
+        </ul>
+    </section>
+    <script>
+        const items = document.getElementsByClassName('item');
+        for(const item of items){
+            item.addEventListener('click', function(event){
+                console.log(item.innerText, 'item is clicked');
+                // event.stopPropagation(); // prevent bubling in higher level
+                event.stopImmediatePropagation(); // prevent others in same level
+            })
+        };
+        for(const item of items){
+            item.addEventListener('click', function(){
+                console.log(item.innerText, 'clicked 2nd time');
+            })
+        };
+        document.querySelector('ul').addEventListener('click', function(){
+            console.log('ul got clicked');
+        });
+        document.querySelector('section').addEventListener('click', function(){
+            console.log('section got clicked');
+        });
+    </script>
+</body>
+</html>
