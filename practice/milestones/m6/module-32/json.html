@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json in js</title>
+</head>
+<body>
+    <h2>JSON = JavaScript Object Notation</h2>
+
+    <script>
+        const student = {
+            name: 'Nayem',
+            age: 25,
+            isActive: true,
+            frineds: ['Hajifa', 'Jui', 'Ahmed']
+        };
+        console.log(student, typeof student);
+
+        // convert into JSON format
+        const jsonStudent = JSON.stringify(student);
+        console.log(jsonStudent, typeof jsonStudent);
+
+        // convert JSON back to object
+        const jsonParsed = JSON.parse(jsonStudent);
+        console.log(jsonParsed, typeof jsonParsed);
+    </script>
+</body>
+</html>
