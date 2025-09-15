@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple cart</title>
+</head>
+<body>
+    <select id="product">
+        <option value="Pen">Pen</option>
+        <option value="Notebook">Notebook</option>
+        <option value="Eraser">Eraser</option>
+        <option value="Bag">Bag</option>
+    </select>
+    <input type="number" id="quantity">
+    <p>
+        <button type="button" onclick="addToCart()">Add to Cart</button>
+    </p>
+    <h3>Cart Items</h3>
+    <ul id="cart-items"></ul>
+    
+    <script src="cart.js"></script>
+</body>
+</html>

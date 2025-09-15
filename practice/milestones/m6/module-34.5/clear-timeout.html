@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear timeout</title>
+</head>
+<body>
+    
+    <script>
+        console.log(1);
+        console.log(2);
+        const timeoutId = setTimeout(()=> console.log('i run'), 1000);
+        console.log('timeout id', timeoutId);
+        console.log(3);
+        clearTimeout(timeoutId);
+    </script>
+</body>
+</html>
